@@ -1,0 +1,76 @@
+{
+  "updated": "2026-05-24",
+  "sections": [
+    {
+      "id": "consultation",
+      "title": "Консультация",
+      "items": [
+        { "name": "Без проведения процедуры", "price": 2000, "unit": "₽" },
+        { "name": "При проведении процедуры", "price": null, "note": "БЕСПЛАТНО" },
+        { "name": "Онлайн (домашний уход)", "price": 2300, "unit": "₽" }
+      ]
+    },
+    {
+      "id": "botulinotherapy",
+      "title": "Ботулинотерапия",
+      "items": [
+        { "name": "Препарат Релатокс", "price": 380, "unit": "₽/ед." },
+        { "name": "Межбровье / лоб / глаза", "price": null, "note": "рассчитываются индивидуально" }
+      ]
+    },
+    {
+      "id": "collagen",
+      "title": "Коллагеностимуляция",
+      "items": [
+        { "name": "Collost Micro", "price": 14000, "unit": "₽" },
+        { "name": "Гель Collost 7% (1,5 ml)", "price": 13000, "unit": "₽" },
+        { "name": "BELLARTI Nucleo 20", "price": 15000, "unit": "₽" }
+      ]
+    },
+    {
+      "id": "biorevitalization",
+      "title": "Биоревитализация лица",
+      "items": [
+        { "name": "Лицо", "price": 8000, "unit": "₽", "note": "от" }
+      ]
+    },
+    {
+      "id": "mesotherapy",
+      "title": "Мезотерапия",
+      "items": [
+        {
+          "name": "Лицо",
+          "price": null,
+          "note": "против воспалений, осветление, постакне, сияние — цена по консультации"
+        },
+        { "name": "Рост волос", "price": 6000, "unit": "₽" }
+      ]
+    },
+    {
+      "id": "lipolytics",
+      "title": "Липолитики",
+      "items": [
+        { "name": "Подбородок", "price": 5000, "unit": "₽" },
+        { "name": "Щёки", "price": 5000, "unit": "₽" }
+      ]
+    },
+    {
+      "id": "cleansing",
+      "title": "Чистка и пилинг",
+      "items": [
+        { "name": "Чистка лица + лечебный пилинг", "price": 3500, "unit": "₽" },
+        { "name": "Лечебный пилинг", "price": 2500, "unit": "₽" }
+      ]
+    },
+    {
+      "id": "contour-lips",
+      "title": "Контурная пластика (губы)",
+      "items": [
+        { "name": "Stylage M", "price": 12000, "unit": "₽" },
+        { "name": "Stylage L", "price": 13000, "unit": "₽" },
+        { "name": "Belotero", "price": 12500, "unit": "₽" },
+        { "name": "Neuramis deep", "price": 9000, "unit": "₽" }
+      ]
+    }
+  ]
+}

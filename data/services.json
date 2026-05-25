@@ -1,0 +1,227 @@
+{
+  "shared": {
+    "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры",
+    "visitTitle": "Что входит в визит",
+    "reviews": [
+      { "text": "Очень внимательный специалист, всё объяснила по процедуре и уходу.", "author": "Елена", "age": 52 },
+      { "text": "Грамотная консультация, рекомендации по делу. Результат вижу уже после первого визита.", "author": "Андрей", "age": 41 },
+      { "text": "Спасибо за бережный подход и понятные рекомендации по курсу.", "author": "Ирина", "age": 48 }
+    ],
+    "trustCards": [
+      { "title": "Никаких скрытых доплат", "text": "Не нужно доплачивать за консультацию при проведении процедуры." },
+      { "title": "Рекомендации сразу", "text": "План ухода и курс процедур обсуждаем на приёме." },
+      { "title": "Подарок", "text": "Консультация косметолога при проведении процедуры — бесплатно." }
+    ]
+  },
+  "services": [
+    {
+      "slug": "consultation",
+      "url": "/consultation",
+      "priceSectionId": "consultation",
+      "menuLabel": "Консультация",
+      "hero": {
+        "title": "Консультация косметолога",
+        "priceDisplay": "от 2 000 ₽",
+        "price": 2000,
+        "oldPrice": null,
+        "priceNote": "онлайн-консультация по уходу — 2 300 ₽",
+        "bonus": "При записи на процедуру — консультация бесплатно"
+      },
+      "heroImage": "assets/images/treatment-facial.png",
+      "visitSteps": [
+        "Диагностика состояния кожи",
+        "Обсуждение целей и ожиданий",
+        "Подбор процедур и домашнего ухода",
+        "Ответы на все вопросы"
+      ],
+      "promoBanner": null,
+      "resultText": "После консультации вы понимаете, какие процедуры подходят именно вам, и получаете персональный план ухода.",
+      "cardImage": "assets/images/treatment-facial.png"
+    },
+    {
+      "slug": "botox",
+      "url": "/botox",
+      "priceSectionId": "botulinotherapy",
+      "menuLabel": "Ботулинотерапия",
+      "hero": {
+        "title": "Ботулинотерапия",
+        "priceDisplay": "от 380 ₽/ед.",
+        "price": 380,
+        "oldPrice": null,
+        "priceNote": "препарат Релатокс; зоны лица — индивидуально",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/product-relatox.png",
+      "visitSteps": [
+        "Оценит мимику и зоны коррекции",
+        "Подберёт дозировку Релатокс",
+        "Проведёт процедуру",
+        "Даст рекомендации по уходу"
+      ],
+      "resultText": "Смягчение мимических морщин, более свежий и отдохнувший вид лица при сохранении естественной мимики.",
+      "cardImage": "assets/images/product-relatox.png"
+    },
+    {
+      "slug": "aesthefill",
+      "url": "/aesthefill",
+      "priceSectionId": "collagen",
+      "menuLabel": "Коллагеностимуляция",
+      "hero": {
+        "title": "Коллагеностимуляция",
+        "priceDisplay": "от 13 000 ₽",
+        "price": 13000,
+        "oldPrice": null,
+        "priceNote": "Collost, BELLARTI Nucleo",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/treatment-facial.png",
+      "visitSteps": [
+        "Диагностика кожи и фототипа",
+        "Выбор препарата (Collost / BELLARTI)",
+        "Проведение процедуры",
+        "Рекомендации по курсу"
+      ],
+      "resultText": "Улучшение плотности и тонуса кожи, постепенное разглаживание рельефа за счёт стимуляции собственного коллагена.",
+      "cardImage": "assets/images/treatment-facial.png"
+    },
+    {
+      "slug": "biorevitalization",
+      "url": "/biorevitalization",
+      "priceSectionId": "biorevitalization",
+      "menuLabel": "Биоревитализация",
+      "hero": {
+        "title": "Биоревитализация лица",
+        "priceDisplay": "от 8 000 ₽",
+        "price": 8000,
+        "oldPrice": null,
+        "priceNote": null,
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/product-biorev.png",
+      "visitSteps": [
+        "Оценит увлажнённость и тонус кожи",
+        "Подберёт препарат и схему",
+        "Проведёт биоревитализацию",
+        "Составит план курса"
+      ],
+      "resultText": "Кожа выглядит более увлажнённой и сияющей, улучшается эластичность и общий тон лица.",
+      "cardImage": "assets/images/product-biorev.png"
+    },
+    {
+      "slug": "mesotherapy",
+      "url": "/mesotherapy",
+      "priceSectionId": "mesotherapy",
+      "menuLabel": "Мезотерапия",
+      "hero": {
+        "title": "Мезотерапия",
+        "priceDisplay": "от 6 000 ₽",
+        "price": 6000,
+        "oldPrice": null,
+        "priceNote": "лицо — по консультации; рост волос — 6 000 ₽",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/treatment-facial.png",
+      "visitSteps": [
+        "Диагностика кожи лица или скальпа",
+        "Подбор коктейля под задачу",
+        "Проведёт мезотерапию",
+        "Рекомендации по курсу и уходу"
+      ],
+      "resultText": "При курсе процедур выравнивается тон, снижается воспалительность, кожа приобретает более ухоженный и отдохнувший вид.",
+      "cardImage": "assets/images/treatment-facial.png"
+    },
+    {
+      "slug": "lipolytics",
+      "url": "/lipolytics",
+      "priceSectionId": "lipolytics",
+      "menuLabel": "Липолитики",
+      "hero": {
+        "title": "Липолитики",
+        "priceDisplay": "5 000 ₽",
+        "price": 5000,
+        "oldPrice": null,
+        "priceNote": "подбородок или щёки",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/treatment-facial.png",
+      "visitSteps": [
+        "Оценит зону коррекции",
+        "Подберёт схему введения",
+        "Проведёт процедуру",
+        "Объяснит уход после"
+      ],
+      "resultText": "Постепенное уменьшение локальных жировых отложений в зоне подбородка или щёк.",
+      "cardImage": "assets/images/treatment-facial.png"
+    },
+    {
+      "slug": "lips",
+      "url": "/lips",
+      "priceSectionId": "contour-lips",
+      "menuLabel": "Контурная пластика губ",
+      "hero": {
+        "title": "Контурная пластика губ",
+        "priceDisplay": "от 9 000 ₽",
+        "price": 9000,
+        "oldPrice": null,
+        "priceNote": "Neuramis deep — от 9 000 ₽; Stylage, Belotero — в прайсе",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/result-lips.png",
+      "resultImage": "assets/images/result-lips.png",
+      "visitSteps": [
+        "Обсудит желаемый объём и форму",
+        "Подберёт филлер",
+        "Проведёт контурную пластику",
+        "Рекомендации по восстановлению"
+      ],
+      "resultText": "Естественное увлажнение и объём губ, гармоничные пропорции с учётом анатомии лица.",
+      "cardImage": "assets/images/result-lips.png"
+    },
+    {
+      "slug": "facialcleansing",
+      "url": "/facialcleansing",
+      "priceSectionId": "cleansing",
+      "menuLabel": "Чистка + пилинг",
+      "hero": {
+        "title": "Чистка лица + лечебный пилинг",
+        "priceDisplay": "3 500 ₽",
+        "price": 3500,
+        "oldPrice": null,
+        "priceNote": "лечебный пилинг отдельно — 2 500 ₽",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/treatment-facial.png",
+      "visitSteps": [
+        "Диагностика типа кожи",
+        "Профессиональная чистка",
+        "Лечебный пилинг",
+        "Подбор домашнего ухода"
+      ],
+      "resultText": "Очищенные поры, более ровный тон и текстура, кожа выглядит свежей и ухоженной.",
+      "cardImage": "assets/images/treatment-facial.png"
+    },
+    {
+      "slug": "peeling",
+      "url": "/peeling",
+      "priceSectionId": "cleansing",
+      "menuLabel": "Пилинг лица",
+      "hero": {
+        "title": "Лечебный пилинг",
+        "priceDisplay": "2 500 ₽",
+        "price": 2500,
+        "oldPrice": null,
+        "priceNote": "чистка + пилинг — 3 500 ₽",
+        "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
+      },
+      "heroImage": "assets/images/treatment-facial.png",
+      "visitSteps": [
+        "Определит тип кожи и показания",
+        "Подберёт состав пилинга",
+        "Проведёт процедуру",
+        "Рекомендации по SPF и уходу"
+      ],
+      "resultText": "Обновление поверхности кожи, выравнивание тона, сияние после курса процедур.",
+      "cardImage": "assets/images/treatment-facial.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "menu": [
+    {
+      "title": "Услуги",
+      "items": [
+        { "label": "Консультация", "url": "/consultation" },
+        { "label": "Ботулинотерапия", "url": "/botox" },
+        { "label": "Коллагеностимуляция", "url": "/aesthefill" },
+        { "label": "Биоревитализация", "url": "/biorevitalization" },
+        { "label": "Мезотерапия", "url": "/mesotherapy" },
+        { "label": "Липолитики", "url": "/lipolytics" },
+        { "label": "Контурная пластика губ", "url": "/lips" },
+        { "label": "Чистка + пилинг", "url": "/facialcleansing" },
+        { "label": "Пилинг", "url": "/peeling" }
+      ]
+    },
+    {
+      "title": "О клинике",
+      "items": [
+        { "label": "О нас", "url": "/company" },
+        { "label": "Контакты", "url": "/contacts" },
+        { "label": "Документы", "url": "/documents" }
+      ]
+    },
+    { "label": "Прейскурант", "url": "/amenities" }
+  ]
+}
