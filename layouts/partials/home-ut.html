@@ -1,0 +1,16 @@
+{{- $meta := site.Data.site_meta -}}
+{{- $lines := $meta.heroUt.lines -}}
+{{- if not $lines -}}
+<p class="home-hero__utp-fallback">{{ $meta.tagline }}</p>
+{{- else -}}
+<div class="home-hero__utp" aria-label="{{ $meta.tagline }}">
+  {{- range $lines -}}
+    {{- $classes := "home-hero__utp-line" -}}
+    {{- if .highlight -}}{{- $classes = printf "%s home-hero__utp-line--lead" $classes -}}{{- end -}}
+    {{- if .accent -}}{{- $classes = printf "%s home-hero__utp-line--accent" $classes -}}{{- end -}}
+    <span class="{{ $classes }}">
+      {{- if .highlight -}}{{ .text }} <span class="home-hero__utp-highlight">{{ .highlight }}</span>{{- else -}}{{ .text }}{{- end -}}
+    </span>
+  {{- end -}}
+</div>
+{{- end -}}

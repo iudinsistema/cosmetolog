@@ -1,0 +1,15 @@
+{{- $address := site.Data.site_meta.address -}}
+{{- if $address.map -}}
+{{- $lon := $address.map.lon -}}
+{{- $lat := $address.map.lat -}}
+{{- $zoom := $address.map.zoom | default 16 -}}
+{{- $src := printf "https://yandex.ru/map-widget/v1/?ll=%v%%2C%v&z=%v&l=map&pt=%v%%2C%v%%2Cpm2rdm" $lon $lat $zoom $lon $lat -}}
+{{- $label := delimit (slice $address.city $address.street $address.metro) ", " -}}
+<section class="mt-10">
+  <h2 class="font-display text-xl mb-2">Как нас найти</h2>
+  <p class="text-sm text-brand-muted mb-4">{{ $label }}</p>
+  <div class="rounded-2xl overflow-hidden border border-brand-line shadow-sm">
+    <iframe src="{{ $src }}" class="w-full min-h-[360px] md:min-h-[420px]" title="Карта — {{ $label }}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+{{- end -}}

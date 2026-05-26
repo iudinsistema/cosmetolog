@@ -1,0 +1,13 @@
+{{- $n := string (int .) -}}
+{{- $l := len $n -}}
+{{- $out := "" -}}
+{{- range $k := seq 0 (sub $l 1) -}}
+  {{- $idx := sub (sub $l 1) $k -}}
+  {{- $c := substr $n $idx 1 -}}
+  {{- if and (gt $k 0) (eq (mod $k 3) 0) -}}
+    {{- $out = printf "%s %s" $c $out -}}
+  {{- else -}}
+    {{- $out = printf "%s%s" $c $out -}}
+  {{- end -}}
+{{- end -}}
+{{- $out -}}

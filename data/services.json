@@ -9,7 +9,7 @@
     ],
     "trustCards": [
       { "title": "Никаких скрытых доплат", "text": "Не нужно доплачивать за консультацию при проведении процедуры." },
-      { "title": "Рекомендации сразу", "text": "План ухода и курс процедур обсуждаем на приёме." },
+      { "title": "Рекомендации сразу", "text": "План ухода и курс процедур обсужу на приёме." },
       { "title": "Подарок", "text": "Консультация косметолога при проведении процедуры — бесплатно." }
     ]
   },
@@ -27,7 +27,8 @@
         "priceNote": "онлайн-консультация по уходу — 2 300 ₽",
         "bonus": "При записи на процедуру — консультация бесплатно"
       },
-      "heroImage": "assets/images/treatment-facial.png",
+      "cardImage": "assets/images/doctor-portrait.png",
+      "heroImage": "assets/images/doctor-portrait.png",
       "visitSteps": [
         "Диагностика состояния кожи",
         "Обсуждение целей и ожиданий",
@@ -35,8 +36,7 @@
         "Ответы на все вопросы"
       ],
       "promoBanner": null,
-      "resultText": "После консультации вы понимаете, какие процедуры подходят именно вам, и получаете персональный план ухода.",
-      "cardImage": "assets/images/treatment-facial.png"
+      "resultText": "После консультации вы понимаете, какие процедуры подходят именно вам, и получаете персональный план ухода."
     },
     {
       "slug": "botox",
@@ -51,6 +51,7 @@
         "priceNote": "препарат Релатокс; зоны лица — индивидуально",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
+      "cardImage": "assets/images/product-relatox.png",
       "heroImage": "assets/images/product-relatox.png",
       "visitSteps": [
         "Оценит мимику и зоны коррекции",
@@ -58,8 +59,7 @@
         "Проведёт процедуру",
         "Даст рекомендации по уходу"
       ],
-      "resultText": "Смягчение мимических морщин, более свежий и отдохнувший вид лица при сохранении естественной мимики.",
-      "cardImage": "assets/images/product-relatox.png"
+      "resultText": "Смягчение мимических морщин, более свежий и отдохнувший вид лица при сохранении естественной мимики."
     },
     {
       "slug": "aesthefill",
@@ -74,15 +74,15 @@
         "priceNote": "Collost, BELLARTI Nucleo",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "heroImage": "assets/images/treatment-facial.png",
+      "cardImage": "assets/images/aesthefill-micro.png",
+      "heroImage": "assets/images/aesthefill-micro.png",
       "visitSteps": [
         "Диагностика кожи и фототипа",
         "Выбор препарата (Collost / BELLARTI)",
         "Проведение процедуры",
         "Рекомендации по курсу"
       ],
-      "resultText": "Улучшение плотности и тонуса кожи, постепенное разглаживание рельефа за счёт стимуляции собственного коллагена.",
-      "cardImage": "assets/images/treatment-facial.png"
+      "resultText": "Улучшение плотности и тонуса кожи, постепенное разглаживание рельефа за счёт стимуляции собственного коллагена."
     },
     {
       "slug": "biorevitalization",
@@ -97,6 +97,7 @@
         "priceNote": null,
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
+      "cardImage": "assets/images/product-biorev.png",
       "heroImage": "assets/images/product-biorev.png",
       "visitSteps": [
         "Оценит увлажнённость и тонус кожи",
@@ -104,8 +105,7 @@
         "Проведёт биоревитализацию",
         "Составит план курса"
       ],
-      "resultText": "Кожа выглядит более увлажнённой и сияющей, улучшается эластичность и общий тон лица.",
-      "cardImage": "assets/images/product-biorev.png"
+      "resultText": "Кожа выглядит более увлажнённой и сияющей, улучшается эластичность и общий тон лица."
     },
     {
       "slug": "mesotherapy",
@@ -120,15 +120,15 @@
         "priceNote": "лицо — по консультации; рост волос — 6 000 ₽",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "heroImage": "assets/images/treatment-facial.png",
+      "cardImage": "assets/images/aesthefill-micro.png",
+      "heroImage": "assets/images/aesthefill-micro.png",
       "visitSteps": [
         "Диагностика кожи лица или скальпа",
         "Подбор коктейля под задачу",
         "Проведёт мезотерапию",
         "Рекомендации по курсу и уходу"
       ],
-      "resultText": "При курсе процедур выравнивается тон, снижается воспалительность, кожа приобретает более ухоженный и отдохнувший вид.",
-      "cardImage": "assets/images/treatment-facial.png"
+      "resultText": "При курсе процедур выравнивается тон, снижается воспалительность, кожа приобретает более ухоженный и отдохнувший вид."
     },
     {
       "slug": "lipolytics",
@@ -143,15 +143,15 @@
         "priceNote": "подбородок или щёки",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "heroImage": "assets/images/treatment-facial.png",
+      "cardImage": "assets/images/aesthefill-micro.png",
+      "heroImage": "assets/images/aesthefill-micro.png",
       "visitSteps": [
         "Оценит зону коррекции",
         "Подберёт схему введения",
         "Проведёт процедуру",
         "Объяснит уход после"
       ],
-      "resultText": "Постепенное уменьшение локальных жировых отложений в зоне подбородка или щёк.",
-      "cardImage": "assets/images/treatment-facial.png"
+      "resultText": "Постепенное уменьшение локальных жировых отложений в зоне подбородка или щёк."
     },
     {
       "slug": "lips",
@@ -166,16 +166,15 @@
         "priceNote": "Neuramis deep — от 9 000 ₽; Stylage, Belotero — в прайсе",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "heroImage": "assets/images/result-lips.png",
-      "resultImage": "assets/images/result-lips.png",
+      "cardImage": "assets/images/certificate-lips.png",
+      "heroImage": "assets/images/certificate-lips.png",
       "visitSteps": [
         "Обсудит желаемый объём и форму",
         "Подберёт филлер",
         "Проведёт контурную пластику",
         "Рекомендации по восстановлению"
       ],
-      "resultText": "Естественное увлажнение и объём губ, гармоничные пропорции с учётом анатомии лица.",
-      "cardImage": "assets/images/result-lips.png"
+      "resultText": "Естественное увлажнение и объём губ, гармоничные пропорции с учётом анатомии лица."
     },
     {
       "slug": "facialcleansing",
@@ -190,15 +189,15 @@
         "priceNote": "лечебный пилинг отдельно — 2 500 ₽",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "heroImage": "assets/images/treatment-facial.png",
+      "cardImage": "assets/images/aesthefill-micro.png",
+      "heroImage": "assets/images/aesthefill-micro.png",
       "visitSteps": [
         "Диагностика типа кожи",
         "Профессиональная чистка",
         "Лечебный пилинг",
         "Подбор домашнего ухода"
       ],
-      "resultText": "Очищенные поры, более ровный тон и текстура, кожа выглядит свежей и ухоженной.",
-      "cardImage": "assets/images/treatment-facial.png"
+      "resultText": "Очищенные поры, более ровный тон и текстура, кожа выглядит свежей и ухоженной."
     },
     {
       "slug": "peeling",
@@ -213,15 +212,15 @@
         "priceNote": "чистка + пилинг — 3 500 ₽",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "heroImage": "assets/images/treatment-facial.png",
+      "cardImage": "assets/images/aesthefill-micro.png",
+      "heroImage": "assets/images/aesthefill-micro.png",
       "visitSteps": [
         "Определит тип кожи и показания",
         "Подберёт состав пилинга",
         "Проведёт процедуру",
         "Рекомендации по SPF и уходу"
       ],
-      "resultText": "Обновление поверхности кожи, выравнивание тона, сияние после курса процедур.",
-      "cardImage": "assets/images/treatment-facial.png"
+      "resultText": "Обновление поверхности кожи, выравнивание тона, сияние после курса процедур."
     }
   ]
 }

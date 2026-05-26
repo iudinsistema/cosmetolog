@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="font-sans text-brand-text antialiased bg-brand-bg">
+  {{ partial "header.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "cookie.html" . }}
+  {{ partial "floating.html" . }}
+  {{ partial "scripts.html" . }}
+</body>
+</html>

@@ -1,0 +1,13 @@
+{{- $images := . -}}
+{{- if $images -}}
+<section class="py-8">
+  <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+    {{- range $images -}}
+    <div class="rounded-xl overflow-hidden border border-brand-line bg-brand-surface">
+      <img src="{{ .src | relURL }}" alt="{{ .alt }}" class="w-full h-auto object-cover" loading="lazy">
+      {{- with .caption -}}<p class="p-3 text-sm text-brand-muted text-center">{{ . }}</p>{{- end -}}
+    </div>
+    {{- end -}}
+  </div>
+</section>
+{{- end -}}

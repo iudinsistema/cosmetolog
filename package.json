@@ -2,9 +2,16 @@
   "name": "ya-cosmetologist",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "serve": "npx --yes serve dist -l 3000"
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/assets/css/site.css --minify",
+    "build:css:watch": "tailwindcss -i ./assets/css/main.css -o ./static/assets/css/site.css --watch",
+    "build": "npm run build:css && hugo --minify",
+    "dev": "npm run build:css && hugo server -D",
+    "preview": "hugo server --disableFastRender"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }

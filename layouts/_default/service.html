@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{- $slug := .Params.service_slug | default .Section -}}
+{{- $service := index (where site.Data.services.services "slug" $slug) 0 -}}
+{{- if not $service -}}
+  <p>Услуга не найдена.</p>
+{{- else -}}
+{{- $shared := site.Data.services.shared -}}
+{{- $h := $service.hero -}}
+{{- $section := index (where site.Data.prices.sections "id" $service.priceSectionId) 0 -}}
+{{- $old := "" -}}
+{{- with $h.oldPrice -}}{{- $old = printf `<span class="old-price text-2xl md:text-3xl ml-3">%s ₽</span>` (partial "format-price.html" .) -}}{{- end -}}
+  <section class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-10 items-center">
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="font-display text-3xl md:text-5xl mb-4">{{ $h.title }}</h1>
+        <p class="font-display text-4xl md:text-5xl text-accent mb-2">{{ $h.priceDisplay }}{{ $old | safeHTML }}</p>
+        {{- with $h.priceNote -}}<p class="text-brand-muted mb-4">{{ . }}</p>{{- end -}}
+        <p class="text-sm uppercase tracking-wider text-accent font-medium mb-8">с {{ $h.bonus }}</p>
+        <div class="text-left max-w-md mx-auto md:mx-0 mb-10">
+          <p class="font-semibold mb-4">{{ $shared.visitTitle }}</p>
+          <ul class="space-y-3 text-brand-muted">
+            {{- range $service.visitSteps -}}
+            <li class="flex gap-3"><span class="text-accent">✓</span><span>{{ . }}</span></li>
+            {{- end -}}
+          </ul>
+        </div>
+        {{ partial "cta.html" (dict "serviceName" $h.title) }}
+      </div>
+      {{- with $service.heroImage -}}
+      <div class="mt-10 md:mt-0 md:flex-1 max-w-md mx-auto">
+        <img src="{{ . | relURL }}" alt="{{ $h.title }}"
+          class="{{ if strings.Contains . "product-" }}rounded-2xl shadow-lg w-full object-contain bg-brand-elevated p-6 max-h-[420px]{{ else }}rounded-2xl shadow-lg w-full object-cover aspect-[4/5]{{ end }}"
+          loading="lazy">
+      </div>
+      {{- end -}}
+    </div>
+  </section>
+  {{- with $service.promoBanner -}}
+  <div class="bg-accent/15 border-y border-accent/25 text-center py-3 px-4 text-sm font-medium text-accent">{{ . }}</div>
+  {{- end -}}
+  {{ partial "reviews.html" $shared.reviews }}
+  {{ partial "doctor.html" site.Data.site_meta.doctor }}
+  {{ partial "trust-cards.html" $shared.trustCards }}
+  <section class="py-16 bg-brand-surface border-y border-brand-line text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-display text-2xl md:text-3xl mb-2">{{ $h.title }}</h2>
+      <p class="font-display text-3xl mb-2 text-accent">{{ $h.priceDisplay }}{{ $old | safeHTML }}</p>
+      <p class="text-brand-muted mb-6">{{ $h.bonus }}</p>
+      <p class="text-sm text-brand-muted mb-6">Напишите в мессенджер — отвечу и запишу на удобное время</p>
+      {{ partial "cta.html" (dict "serviceName" $h.title) }}
+    </div>
+  </section>
+  {{- with $service.resultImage -}}
+  <section class="py-12 bg-brand-elevated">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-display text-2xl mb-6 text-center">Результат процедуры</h2>
+      <img src="{{ . | relURL }}" alt="{{ $h.title }}" class="w-full rounded-2xl shadow-md" loading="lazy">
+    </div>
+  </section>
+  {{- end -}}
+  <section class="py-12">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-display text-2xl mb-4 text-center">Результат</h2>
+      <p class="text-brand-muted text-center leading-relaxed">{{ $service.resultText }}</p>
+    </div>
+  </section>
+  {{ partial "price-table.html" $section }}
+  <section class="py-16 text-center">
+    <div class="max-w-xl mx-auto px-4">
+      <h2 class="font-display text-2xl mb-4">Записаться</h2>
+      {{ partial "cta.html" (dict "serviceName" $h.title) }}
+    </div>
+  </section>
+{{- end -}}
+{{ end }}

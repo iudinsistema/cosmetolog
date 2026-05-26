@@ -1,0 +1,19 @@
+{{- $reviews := . -}}
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-2xl text-center mb-8">Отзывы</h2>
+    <div class="swiper review-swiper">
+      <div class="swiper-wrapper">
+        {{- range $reviews -}}
+        <div class="swiper-slide">
+          <blockquote class="border border-brand-line rounded-xl p-6 h-full bg-brand-surface">
+            <p class="text-brand-muted mb-4">«{{ .text }}»</p>
+            <footer class="font-medium">{{ .author }}{{ with .age }}, {{ . }}{{ end }}</footer>
+          </blockquote>
+        </div>
+        {{- end -}}
+      </div>
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+</section>

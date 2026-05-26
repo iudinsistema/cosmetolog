@@ -1,0 +1,45 @@
+{{- $meta := site.Data.site_meta -}}
+{{- $nav := site.Data.navigation -}}
+<header id="site-header" class="sticky top-0 z-40 bg-brand-surface/95 backdrop-blur-md border-b border-brand-line">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a href="{{ "/" | relURL }}" class="shrink-0 block">
+      {{ partial "brand-logo.html" (dict "class" "h-10 md:h-12 w-auto" "label" $meta.brandName) }}
+    </a>
+    <nav class="hidden lg:flex items-center gap-6">
+      {{- range $nav.menu -}}
+        {{- if .items -}}
+          <div class="relative group">
+            <button class="text-sm font-medium uppercase tracking-wide hover:text-accent" type="button">{{ .title }} ▾</button>
+            <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50">
+              <div class="bg-brand-elevated border border-brand-line shadow-xl min-w-[220px] py-1">
+                {{- range .items -}}
+                  <a href="{{ .url | relURL }}" class="block px-4 py-2 text-sm hover:text-accent">{{ .label }}</a>
+                {{- end -}}
+              </div>
+            </div>
+          </div>
+        {{- else -}}
+          <a href="{{ .url | relURL }}" class="text-sm font-medium uppercase tracking-wide hover:text-accent">{{ .label }}</a>
+        {{- end -}}
+      {{- end -}}
+    </nav>
+    <div class="flex items-center gap-2 md:gap-3 shrink-0">
+      <div class="hidden md:block">{{ partial "header-phone.html" . }}</div>
+      <button id="menu-toggle" type="button" class="lg:hidden p-2" aria-label="Меню" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="hidden lg:hidden border-t border-brand-line px-4 py-4">
+    <div class="pb-4 mb-4 border-b border-brand-line">{{ partial "header-phone.html" . }}</div>
+    {{- range $nav.menu -}}
+      {{- if .items -}}
+        {{- range .items -}}
+          <a href="{{ .url | relURL }}" class="block py-2 border-b border-brand-line">{{ .label }}</a>
+        {{- end -}}
+      {{- else -}}
+        <a href="{{ .url | relURL }}" class="block py-2 border-b border-brand-line">{{ .label }}</a>
+      {{- end -}}
+    {{- end -}}
+  </nav>
+</header>

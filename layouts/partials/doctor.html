@@ -1,0 +1,15 @@
+{{- $doctor := . -}}
+{{- $withDiploma := strings.Contains $doctor.photo "doctor-diploma" -}}
+<section class="py-12 bg-brand-elevated">
+  <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row gap-8 items-center">
+    <img src="{{ $doctor.photo | relURL }}" alt="{{ $doctor.name }}"
+      class="{{ if $withDiploma }}w-full max-w-xs rounded-2xl object-cover object-top aspect-[3/4] border-4 border-brand-line shadow-lg shrink-0{{ else }}w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-4 border-brand-line shadow-lg shrink-0{{ end }}"
+      loading="lazy">
+    <div>
+      <h2 class="font-display text-2xl mb-2">{{ $doctor.name }}</h2>
+      <p class="text-accent font-medium mb-1">{{ $doctor.role }}</p>
+      <p class="text-brand-muted mb-3">{{ $doctor.experience }}</p>
+      {{- with $doctor.bio -}}<p class="text-sm text-brand-muted leading-relaxed">{{ . }}</p>{{- end -}}
+    </div>
+  </div>
+</section>

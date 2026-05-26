@@ -1,5 +1,5 @@
 /**
- * Конвертирует «лого 1.pdf» в assets/logo.svg (вектор из PDF).
+ * Конвертирует «лого 1.pdf» в static/assets/logo.svg (вектор из PDF).
  * Требует: pdftocairo (poppler-utils)
  *
  *   node scripts/pdf-logo-to-svg.mjs
@@ -12,8 +12,9 @@ import { spawnSync } from 'child_process';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const pdf = path.join(root, 'лого 1.pdf');
-const outSvg = path.join(root, 'assets/logo.svg');
-const tmp = path.join(root, 'assets/.logo-from-pdf-tmp');
+const assetsDir = path.join(root, 'static/assets');
+const outSvg = path.join(assetsDir, 'logo.svg');
+const tmp = path.join(assetsDir, '.logo-from-pdf-tmp');
 
 if (!fs.existsSync(pdf)) {
   console.error('PDF not found:', pdf);

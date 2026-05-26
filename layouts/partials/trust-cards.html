@@ -1,0 +1,11 @@
+{{- $cards := . -}}
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+    {{- range $cards -}}
+    <div class="border border-brand-line rounded-xl p-6 bg-brand-surface text-center">
+      <h3 class="font-semibold mb-2">{{ .title }}</h3>
+      <p class="text-sm text-brand-muted">{{ .text }}</p>
+    </div>
+    {{- end -}}
+  </div>
+</section>

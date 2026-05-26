@@ -1,0 +1,6 @@
+{{- $raw := readFile "static/assets/logo.svg" -}}
+{{- $raw = replaceRE `<\?xml[^>]*>\s*` "" $raw -}}
+{{- $class := .class | default "h-10 md:h-12 w-auto" -}}
+{{- $label := .label | default site.Data.site_meta.brandName -}}
+{{- $open := printf `<svg class="site-logo %s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311 277" fill="currentColor" focusable="false" role="img" aria-label="%s">` $class $label -}}
+{{- replaceRE `<svg[^>]*>` $open $raw 1 | safeHTML -}}

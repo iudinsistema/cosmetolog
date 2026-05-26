@@ -1,0 +1,25 @@
+{{- $meta := site.Data.site_meta -}}
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  {{- $title = $meta.brandName -}}
+{{- else -}}
+  {{- $title = printf "%s — %s" .Title $meta.brandName -}}
+{{- end -}}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0c0c0c" id="meta-theme-color">
+<meta name="color-scheme" content="dark">
+<script>
+  (function () {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    var m = document.querySelector('meta[name="theme-color"]');
+    if (m) m.setAttribute('content', '#0c0c0c');
+  })();
+</script>
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $meta.seoHome | default $meta.tagline }}">
+<link rel="icon" href="{{ "assets/logo.svg" | relURL }}" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="{{ "assets/css/site.css" | relURL }}">
+{{- block "extra-head" . }}{{ end -}}

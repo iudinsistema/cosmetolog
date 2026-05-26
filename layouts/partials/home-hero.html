@@ -1,0 +1,17 @@
+<section id="home-hero" class="home-hero py-16 md:py-24" aria-label="Главный экран">
+  <div class="home-hero__rain" aria-hidden="true">
+    <canvas id="reverse-time-canvas"></canvas>
+  </div>
+  <div class="home-hero__inner max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 md:gap-14 items-center">
+    <div class="home-hero__content flex-1 w-full flex flex-col items-center text-center">
+      <h1 class="home-hero__logo mb-8 md:mb-10 font-normal">
+        {{ partial "brand-logo.html" (dict "class" "home-hero__logo-svg" "label" site.Data.site_meta.brandName) }}
+      </h1>
+      {{ partial "home-ut.html" . }}
+      <div class="home-hero__cta mt-9 md:mt-10 w-full flex justify-center">
+        {{ partial "cta.html" (dict "serviceName" "") }}
+      </div>
+    </div>
+    {{ partial "hero-visual.html" . }}
+  </div>
+</section>

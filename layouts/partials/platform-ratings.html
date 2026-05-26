@@ -1,0 +1,21 @@
+{{- $ratings := site.Data.platform_ratings -}}
+{{- if $ratings.items -}}
+<section class="platform-ratings" aria-label="Рейтинги на площадках">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="platform-ratings__grid">
+      {{- range $ratings.items -}}
+        {{- if .url -}}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="platform-ratings__item">{{- else -}}<div class="platform-ratings__item">{{- end -}}
+          <div class="platform-ratings__logo-wrap">{{ partial (printf "platform-logo-%s.html" .id) . }}</div>
+          <div class="platform-ratings__stats">
+            <div class="platform-ratings__count-block">
+              <span class="platform-ratings__count">{{ .count }}</span>
+              <span class="platform-ratings__label">ОТЗЫВОВ</span>
+            </div>
+            <span class="platform-ratings__rating">{{ .rating }}</span>
+          </div>
+        {{- if .url -}}</a>{{- else -}}</div>{{- end -}}
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- end -}}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{- $meta := site.Data.site_meta -}}
+{{- $maxW := "max-w-3xl" -}}
+<section class="py-16">
+  <div class="{{ $maxW }} mx-auto px-4">
+    <h1 class="font-display text-4xl mb-8">{{ .Title }}</h1>
+    <div class="page-content text-brand-muted space-y-4 leading-relaxed">
+      {{ .Content }}
+    </div>
+    {{ partial "gallery.html" $meta.documentsGallery }}
+    <div class="mt-12">{{ partial "cta.html" (dict "serviceName" "") }}</div>
+  </div>
+</section>
+{{ end }}
+

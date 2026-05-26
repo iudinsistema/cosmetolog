@@ -1,0 +1,25 @@
+{{- $section := . -}}
+{{- if $section -}}
+<section class="py-12 bg-brand-elevated">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-display text-2xl mb-6">Стоимость — {{ $section.title }}</h2>
+    <table class="w-full prose-price bg-brand-surface border border-brand-line rounded-lg overflow-hidden">
+      <thead><tr class="bg-accent/20 text-brand-text"><th>Услуга</th><th>Цена</th></tr></thead>
+      <tbody>
+        {{- range $section.items -}}
+        <tr>
+          <td class="font-medium">{{ .name }}</td>
+          <td>
+            {{- if .price -}}
+              {{- if eq .note "от" -}}от {{ end -}}{{ partial "format-price.html" .price }} {{ .unit | default "₽" }}
+            {{- else -}}
+              {{ .note | default "—" }}
+            {{- end -}}
+          </td>
+        </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+</section>
+{{- end -}}

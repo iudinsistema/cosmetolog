@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const outDir = path.join(__dirname, '../assets/images/top');
+const outDir = path.join(__dirname, '../static/assets/images/top');
 
 const items = [
   {

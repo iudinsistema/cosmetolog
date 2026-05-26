@@ -24,8 +24,8 @@ import json, os, sys
 
 root = sys.argv[1]
 badge = json.loads(sys.argv[2])
-logo_path = os.path.join(root, "assets/logo.png")
-data = json.load(open(os.path.join(root, "data/top-procedures.json")))
+logo_path = os.path.join(root, "static/assets/logo.png")
+data = json.load(open(os.path.join(root, "data/top_procedures.json")))
 
 logo = Image.open(logo_path).convert("RGBA")
 logo_w = badge["logoWidth"]

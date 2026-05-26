@@ -1,0 +1,22 @@
+{{- $service := . -}}
+{{- $h := $service.hero -}}
+{{- $url := printf "/%s/" $service.slug | relURL -}}
+<article class="bg-brand-surface border border-brand-line rounded-2xl overflow-hidden hover:border-accent/40 transition flex flex-col">
+  {{- with $service.cardImage -}}
+  <a href="{{ $url }}" class="block aspect-[4/3] overflow-hidden service-card-image">
+    <img src="{{ . | relURL }}" alt="{{ $h.title }}" class="w-full h-full object-cover" loading="lazy">
+  </a>
+  {{- end -}}
+  <div class="p-5 flex flex-col flex-1">
+    <h3 class="font-display text-xl mb-2"><a href="{{ $url }}" class="hover:text-accent">{{ $h.title }}</a></h3>
+    <p class="font-display text-2xl text-brand-text mb-1">
+      {{ $h.priceDisplay }}
+      {{- with $h.oldPrice -}}<span class="old-price text-lg ml-2">{{ partial "format-price.html" . }} ₽</span>{{- end -}}
+    </p>
+    {{- with $h.priceNote -}}<p class="text-sm text-brand-muted mb-2">{{ . }}</p>{{- end -}}
+    <p class="text-xs text-accent mb-4">{{ $h.bonus }}</p>
+    <div class="mt-auto flex flex-wrap gap-2">
+      <a href="{{ $url }}" class="text-sm font-medium underline">Подробнее</a>
+    </div>
+  </div>
+</article>

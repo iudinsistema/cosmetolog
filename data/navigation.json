@@ -15,9 +15,9 @@
       ]
     },
     {
-      "title": "О клинике",
+      "title": "Обо мне",
       "items": [
-        { "label": "О нас", "url": "/company" },
+        { "label": "Обо мне", "url": "/company" },
         { "label": "Контакты", "url": "/contacts" },
         { "label": "Документы", "url": "/documents" }
       ]
