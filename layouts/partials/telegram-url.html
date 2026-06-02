@@ -1,5 +1,5 @@
 {{- $meta := site.Data.site_meta -}}
 {{- $base := $meta.contacts.telegram -}}
-{{- $text := cond .serviceName (printf "Здравствуйте! Хочу записаться на: %s" .serviceName) $meta.contacts.telegramPrefill -}}
+{{- $text := cond (ne (.serviceName | default "") "") (printf "Здравствуйте! Хочу записаться на: %s" .serviceName) $meta.contacts.telegramPrefill -}}
 {{- $sep := cond (in $base "?") "&" "?" -}}
 {{- printf "%s%s%s" $base $sep (printf "text=%s" ($text | urlquery)) -}}
