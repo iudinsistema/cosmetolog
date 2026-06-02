@@ -120,8 +120,8 @@
         "priceNote": "лицо — по консультации; рост волос — 6 000 ₽",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "cardImage": "assets/images/aesthefill-micro.png",
-      "heroImage": "assets/images/aesthefill-micro.png",
+      "cardImage": "assets/images/mesotherapy.png",
+      "heroImage": "assets/images/mesotherapy.png",
       "visitSteps": [
         "Диагностика кожи лица или скальпа",
         "Подбор коктейля под задачу",
@@ -143,8 +143,8 @@
         "priceNote": "подбородок или щёки",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "cardImage": "assets/images/aesthefill-micro.png",
-      "heroImage": "assets/images/aesthefill-micro.png",
+      "cardImage": "assets/images/lipolytics.png",
+      "heroImage": "assets/images/lipolytics.png",
       "visitSteps": [
         "Оценит зону коррекции",
         "Подберёт схему введения",
@@ -166,8 +166,8 @@
         "priceNote": "Neuramis deep — от 9 000 ₽; Stylage, Belotero — в прайсе",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "cardImage": "assets/images/certificate-lips.png",
-      "heroImage": "assets/images/certificate-lips.png",
+      "cardImage": "assets/images/lips-contour.png",
+      "heroImage": "assets/images/lips-contour.png",
       "visitSteps": [
         "Обсудит желаемый объём и форму",
         "Подберёт филлер",
@@ -189,8 +189,8 @@
         "priceNote": "лечебный пилинг отдельно — 2 500 ₽",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "cardImage": "assets/images/aesthefill-micro.png",
-      "heroImage": "assets/images/aesthefill-micro.png",
+      "cardImage": "assets/images/facial-cleansing-peeling.png",
+      "heroImage": "assets/images/facial-cleansing-peeling.png",
       "visitSteps": [
         "Диагностика типа кожи",
         "Профессиональная чистка",
@@ -212,8 +212,8 @@
         "priceNote": "чистка + пилинг — 3 500 ₽",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "cardImage": "assets/images/aesthefill-micro.png",
-      "heroImage": "assets/images/aesthefill-micro.png",
+      "cardImage": "assets/images/therapeutic-peeling.png",
+      "heroImage": "assets/images/therapeutic-peeling.png",
       "visitSteps": [
         "Определит тип кожи и показания",
         "Подберёт состав пилинга",

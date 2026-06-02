@@ -5,37 +5,37 @@
     {
       "label": "МЕЗОТЕРАПИЯ КОЖИ ГОЛОВЫ",
       "slug": "mesotherapy",
-      "image": "assets/images/aesthefill-micro.png"
+      "image": "image/top-mesotherapy-scalp.png"
     },
     {
       "label": "КОРРЕКЦИЯ МОРЩИН",
       "slug": "botox",
-      "image": "assets/images/product-relatox.png"
+      "image": "image/top-wrinkles-correction.png"
     },
     {
-      "label": "УЛУЧШЕНИЕ КОЖИ",
+      "label": "БИОРЕВИТАЛИЗАЦИЯ ЛИЦА",
       "slug": "biorevitalization",
-      "image": "assets/images/product-biorev.png"
+      "image": "image/top-biorevitalization.png"
     },
     {
       "label": "ЛЕЧЕНИЕ КОЖИ",
       "slug": "mesotherapy",
-      "image": "assets/images/aesthefill-micro.png"
+      "image": "image/top-skin-treatment.png"
     },
     {
       "label": "КОНТУРНАЯ ПЛАСТИКА ГУБ",
       "slug": "lips",
-      "image": "assets/images/certificate-lips.png"
+      "image": "image/top-lips-contour.png"
     },
     {
       "label": "КОРРЕКЦИЯ ФИГУРЫ",
       "slug": "lipolytics",
-      "image": "assets/images/aesthefill-micro.png"
+      "image": "image/top-body-correction.png"
     },
     {
       "label": "КОНТУРНАЯ ПЛАСТИКА ЛИЦА",
       "slug": "aesthefill",
-      "image": "assets/images/aesthefill-micro.png"
+      "image": "image/top-face-contour.png"
     }
   ]
 }
