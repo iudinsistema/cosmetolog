@@ -237,17 +237,9 @@ a.platform-ratings__item:hover {
 }
 
 .platform-ratings__logo--vk {
-  height: 1.85rem;
-  width: 3.25rem;
-  object-fit: contain;
-}
-
-[data-theme="dark"] .platform-ratings__logo--vk {
-  filter: brightness(0) invert(1);
-}
-
-[data-theme="light"] .platform-ratings__logo--vk {
-  filter: none;
+  height: 2rem;
+  width: 2rem;
+  color: var(--brand-text);
 }
 
 .platform-ratings__stats {
