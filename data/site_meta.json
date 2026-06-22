@@ -56,6 +56,36 @@
       "src": "assets/images/documents/cert-lips.png",
       "alt": "Сертификат по контурной пластике губ",
       "caption": "Сертификат: контурная пластика губ"
+    },
+    {
+      "src": "assets/images/documents/cert-bielenda-mesotherapy.png",
+      "alt": "Сертификат Bielenda Professional: микронидлинг и фракционная мезотерапия",
+      "caption": "Bielenda Professional: микронидлинг и фракционная мезотерапия"
+    },
+    {
+      "src": "assets/images/documents/cert-apparatus-cosmetology.png",
+      "alt": "Сертификат: аппаратная косметология для лица",
+      "caption": "Аппаратная косметология для лица"
+    },
+    {
+      "src": "assets/images/documents/cert-guranda-lips.png",
+      "alt": "Сертификат Guranda Beauty Mentor: интенсив по губам",
+      "caption": "Guranda Beauty Mentor: интенсив по губам"
+    },
+    {
+      "src": "assets/images/documents/cert-eldan-acne-rosacea.png",
+      "alt": "Сертификат ELDAN Cosmetics: акне и розацеа",
+      "caption": "ELDAN Cosmetics: акне и розацеа"
+    },
+    {
+      "src": "assets/images/documents/cert-eldan-aging-skin.png",
+      "alt": "Сертификат ELDAN Cosmetics: работа с возрастной кожей",
+      "caption": "ELDAN Cosmetics: работа с возрастной кожей"
+    },
+    {
+      "src": "assets/images/documents/cert-injection-techniques.png",
+      "alt": "Сертификат: инъекционные методики в косметологии",
+      "caption": "Инъекционные методики в косметологии"
     }
   ],
   "disclaimer": "Имеются противопоказания. Необходимо проконсультироваться со специалистом. Информация на сайте не является публичной офертой.",
