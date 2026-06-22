@@ -15,7 +15,7 @@
         <h1 class="font-display text-3xl md:text-5xl mb-4">{{ $h.title }}</h1>
         <p class="font-display text-4xl md:text-5xl text-accent mb-2">{{ $h.priceDisplay }}{{ $old | safeHTML }}</p>
         {{- with $h.priceNote -}}<p class="text-brand-muted mb-4">{{ . }}</p>{{- end -}}
-        <p class="text-sm uppercase tracking-wider text-accent font-medium mb-8">с {{ $h.bonus }}</p>
+        <p class="text-sm uppercase tracking-wider text-accent font-medium mb-8">{{ $h.bonus }}</p>
         <div class="text-left max-w-md mx-auto md:mx-0 mb-10">
           <p class="font-semibold mb-4">{{ $shared.visitTitle }}</p>
           <ul class="space-y-3 text-brand-muted">
