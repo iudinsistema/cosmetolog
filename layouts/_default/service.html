@@ -24,13 +24,15 @@
             {{- end -}}
           </ul>
         </div>
-        {{ partial "cta.html" (dict "serviceName" $h.title) }}
       </div>
       {{- with $service.heroImage -}}
-      <div class="mt-10 md:mt-0 md:flex-1 max-w-md mx-auto">
+      <div class="mt-10 md:mt-0 md:flex-1 max-w-md mx-auto w-full">
         <img src="{{ . | relURL }}" alt="{{ $h.title }}"
           class="{{ if strings.Contains . "product-" }}rounded-2xl shadow-lg w-full object-contain bg-brand-elevated p-6 max-h-[420px]{{ else }}rounded-2xl shadow-lg w-full object-cover aspect-[4/5]{{ end }}"
           loading="lazy">
+        <div class="mt-4">
+          {{ partial "book-cta.html" (dict "serviceName" $h.title "large" true) }}
+        </div>
       </div>
       {{- end -}}
     </div>
@@ -47,7 +49,7 @@
       <p class="font-display text-3xl mb-2 text-accent">{{ $h.priceDisplay }}{{ $old | safeHTML }}</p>
       <p class="text-brand-muted mb-6">{{ $h.bonus }}</p>
       <p class="text-sm text-brand-muted mb-6">Напишите в мессенджер — отвечу и запишу на удобное время</p>
-      {{ partial "cta.html" (dict "serviceName" $h.title) }}
+      {{ partial "book-cta.html" (dict "serviceName" $h.title "label" "Записаться" "large" true) }}
     </div>
   </section>
   {{- with $service.resultImage -}}
@@ -68,7 +70,7 @@
   <section class="py-16 text-center">
     <div class="max-w-xl mx-auto px-4">
       <h2 class="font-display text-2xl mb-4">Записаться</h2>
-      {{ partial "cta.html" (dict "serviceName" $h.title) }}
+      {{ partial "book-cta.html" (dict "serviceName" $h.title "label" "Записаться" "large" true) }}
     </div>
   </section>
 {{- end -}}

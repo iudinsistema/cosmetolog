@@ -8,7 +8,7 @@
       {{ .Content }}
     </div>
     {{ partial "gallery.html" $meta.gallery }}
-    <div class="mt-12">{{ partial "cta.html" (dict "serviceName" "") }}</div>
+    <div class="mt-12 max-w-md mx-auto">{{ partial "book-cta.html" (dict "large" true) }}</div>
   </div>
 </section>
 {{ end }}

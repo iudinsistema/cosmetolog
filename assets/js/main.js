@@ -16,6 +16,23 @@
     });
   });
 
+  document.querySelectorAll('[data-book-cta-toggle]').forEach((btn) => {
+    const panel = btn.parentElement?.querySelector('[data-book-cta-panel]');
+    if (!panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = panel.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!btn.parentElement?.contains(event.target)) {
+        panel.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
   const cookieBanner = document.getElementById('cookie-banner');
   const cookieAccept = document.getElementById('cookie-accept');
   if (cookieBanner && cookieAccept) {

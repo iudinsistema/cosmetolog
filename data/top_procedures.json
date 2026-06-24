@@ -3,9 +3,9 @@
   "subtitle": "Процедуры, которые чаще всего выбирают клиенты",
   "items": [
     {
-      "label": "МЕЗОТЕРАПИЯ КОЖИ ГОЛОВЫ",
-      "slug": "mesotherapy",
-      "image": "image/top-mesotherapy-scalp.png"
+      "label": "КОНТУРНАЯ ПЛАСТИКА ГУБ",
+      "slug": "lips",
+      "image": "image/top-lips-contour.png"
     },
     {
       "label": "КОРРЕКЦИЯ МОРЩИН",
@@ -16,26 +16,6 @@
       "label": "БИОРЕВИТАЛИЗАЦИЯ ЛИЦА",
       "slug": "biorevitalization",
       "image": "image/top-biorevitalization.png"
-    },
-    {
-      "label": "ЛЕЧЕНИЕ КОЖИ",
-      "slug": "mesotherapy",
-      "image": "image/top-skin-treatment.png"
-    },
-    {
-      "label": "КОНТУРНАЯ ПЛАСТИКА ГУБ",
-      "slug": "lips",
-      "image": "image/top-lips-contour.png"
-    },
-    {
-      "label": "КОРРЕКЦИЯ ФИГУРЫ",
-      "slug": "lipolytics",
-      "image": "image/top-body-correction.png"
-    },
-    {
-      "label": "КОНТУРНАЯ ПЛАСТИКА ЛИЦА",
-      "slug": "aesthefill",
-      "image": "image/top-face-contour.png"
     }
   ]
 }

@@ -1,9 +1,13 @@
 {
   "menu": [
+    { "label": "Консультация", "url": "/consultation" },
+    { "label": "Прейскурант", "url": "/amenities" },
+    { "label": "Обо мне", "url": "/company" },
+    { "label": "Документы", "url": "/documents" },
+    { "label": "Контакты", "url": "/contacts" },
     {
       "title": "Услуги",
       "items": [
-        { "label": "Консультация", "url": "/consultation" },
         { "label": "Ботулинотерапия", "url": "/botox" },
         { "label": "Коллагеностимуляция", "url": "/aesthefill" },
         { "label": "Биоревитализация", "url": "/biorevitalization" },
@@ -13,15 +17,6 @@
         { "label": "Чистка + пилинг", "url": "/facialcleansing" },
         { "label": "Пилинг", "url": "/peeling" }
       ]
-    },
-    {
-      "title": "Обо мне",
-      "items": [
-        { "label": "Обо мне", "url": "/company" },
-        { "label": "Контакты", "url": "/contacts" },
-        { "label": "Документы", "url": "/documents" }
-      ]
-    },
-    { "label": "Прейскурант", "url": "/amenities" }
+    }
   ]
 }

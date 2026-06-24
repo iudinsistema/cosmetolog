@@ -3,6 +3,9 @@
   <div class="hero-visual__frame aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
     <img src="{{ $doctor.photo | relURL }}" alt="{{ $doctor.name }}" class="hero-visual__photo w-full h-full object-cover object-top" loading="lazy">
   </div>
+  <div class="hero-visual__book mt-4">
+    {{ partial "book-cta.html" (dict "large" true) }}
+  </div>
   <div class="hero-visual__caption mt-4 text-center md:text-left">
     <p class="hero-visual__name font-display text-xl text-brand-text">{{ $doctor.name }}</p>
     <p class="hero-visual__role text-accent font-medium mt-1">{{ $doctor.role }}</p>

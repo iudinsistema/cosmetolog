@@ -144,8 +144,8 @@
         "priceNote": "подбородок или щёки",
         "bonus": "БЕСПЛАТНАЯ консультация при проведении процедуры"
       },
-      "cardImage": "assets/images/lipolytics.png",
-      "heroImage": "assets/images/lipolytics.png",
+      "cardImage": "assets/images/product-lipolytics.png",
+      "heroImage": "assets/images/product-lipolytics.png",
       "visitSteps": [
         "Консультация и подготовка",
         "Сбор анамнеза",
