@@ -3,7 +3,7 @@ title: "Контакты"
 layout: contacts
 ---
 
-<p class="text-lg text-brand-text"><strong>Ярослава Питиримова</strong> · косметолог</p>
+<p class="text-lg text-brand-text"><strong>Ярослава Иудина</strong> · косметолог</p>
 <p>г. Санкт-Петербург, Невский проспект, 94</p>
 <p>м. Маяковская / Площадь Восстания</p>
 <p>Телефон: <a href="tel:+79112943932" class="text-accent font-medium hover:opacity-90">+7 (911) 294-39-32</a></p>

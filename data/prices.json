@@ -66,9 +66,9 @@
       "id": "contour-lips",
       "title": "Контурная пластика (губы)",
       "items": [
-        { "name": "Stylage M", "price": 12000, "unit": "₽" },
-        { "name": "Stylage L", "price": 13000, "unit": "₽" },
-        { "name": "Belotero", "price": 12500, "unit": "₽" },
+        { "name": "Stylage M", "price": 15000, "unit": "₽" },
+        { "name": "Stylage L", "price": 16000, "unit": "₽" },
+        { "name": "Belotero", "price": 17500, "unit": "₽" },
         { "name": "Neuramis deep", "price": 9000, "unit": "₽" }
       ]
     }
