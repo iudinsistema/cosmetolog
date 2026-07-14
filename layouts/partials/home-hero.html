@@ -8,9 +8,6 @@
         {{ partial "brand-logo.html" (dict "class" "home-hero__logo-svg" "label" site.Data.site_meta.brandName) }}
       </h1>
       {{ partial "home-ut.html" . }}
-      <div class="home-hero__cta mt-9 md:mt-10 w-full flex justify-center">
-        {{ partial "cta.html" (dict "serviceName" "") }}
-      </div>
     </div>
     {{ partial "hero-visual.html" . }}
   </div>

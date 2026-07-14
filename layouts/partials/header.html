@@ -34,9 +34,17 @@
     <div class="pb-4 mb-4 border-b border-brand-line">{{ partial "header-phone.html" . }}</div>
     {{- range $nav.menu -}}
       {{- if .items -}}
-        {{- range .items -}}
-          <a href="{{ .url | relURL }}" class="block py-2 border-b border-brand-line">{{ .label }}</a>
-        {{- end -}}
+        <div class="border-b border-brand-line">
+          <button type="button" class="flex w-full items-center justify-between py-2 text-left font-medium" data-submenu-toggle="nav-submenu-services" aria-expanded="false">
+            {{ .title }}
+            <span class="text-brand-muted text-sm">▾</span>
+          </button>
+          <div id="nav-submenu-services" class="hidden pb-2 pl-3">
+            {{- range .items -}}
+              <a href="{{ .url | relURL }}" class="block py-2 text-sm text-brand-muted hover:text-accent">{{ .label }}</a>
+            {{- end -}}
+          </div>
+        </div>
       {{- else -}}
         <a href="{{ .url | relURL }}" class="block py-2 border-b border-brand-line">{{ .label }}</a>
       {{- end -}}

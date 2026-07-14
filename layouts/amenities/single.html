@@ -38,6 +38,6 @@
   </section>
   <section class="py-12 text-center">
     <h2 class="font-display text-xl mb-4">Записаться</h2>
-    {{ partial "cta.html" (dict "serviceName" "") }}
+    <div class="max-w-md mx-auto">{{ partial "book-cta.html" (dict "large" true) }}</div>
   </section>
 {{ end }}
